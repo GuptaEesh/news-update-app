@@ -1,0 +1,164 @@
+:root{
+    --primary-color:rgba(22,22,22,0.2);
+    --secondary-color:rgba(0,0,0,0.4);
+    --text-light:rgba(255,255,255,0.6);
+    --text-medium:rgba(255,255,255,0.8);
+    --text-bright:rgba(255,255,255,1);
+    --loader:black;
+}
+*,*::after,*::before{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+input[type="text"]{
+    padding: 10px 1.2rem;
+    margin:1rem;
+    border-radius: 10px;
+    border: 5px solid transparent;
+    width:80%;
+    outline: none;
+}
+input[type="text"]:focus{
+    border: 5px solid var(--secondary-color);
+}
+.clear-search{
+    margin-left:10px;
+    left:82%;
+    transition: transform 0.3s ease;
+}
+.clear-search:hover{
+transform: scale(1.2);
+}
+.text-lg{
+    font-size: xx-large;
+}
+.text-md{
+    font-size: x-large;
+}
+.bold{
+    font-weight: 700;
+}
+
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+
+body{
+    background-color: var(--primary-color);
+}
+.text-light{
+    color:var(--text-light);
+}
+
+.text-bright{
+    color:var(--text-bright);
+}
+
+.text-medium{
+    color:var(--text-medium);
+}
+.h-full{
+    height: 80vh;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+
+
+.text-center{
+    text-align: center;
+}
+
+.text-underline{
+    text-decoration: underline;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.gap-md{
+    gap:1rem;
+}
+
+.gap-sm{
+    gap:10px;
+}
+.change-page{
+    padding: 10px;
+    margin: 10px;
+}
+.change-page:disabled{
+    cursor:not-allowed;
+}
+.page-input{
+    width: 50px;
+    padding: 10px;
+}
+.page-flasher{
+    border:1px solid var(--secondary-color);
+    padding: 10px;
+}
+.align-center{
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+.justify-space-bw{
+    justify-content: space-between;
+}
+
+.p-1{
+    padding: 1rem;
+}
+.m-1{
+    margin: 1rem;
+}
+.mt-sm{
+    margin-top: 10px;
+}
+.b-sm{
+    border-radius: 5px;
+}
+.b-md{
+    border-radius: 1rem;
+}
+.rounded{
+    border-radius: 50%;
+}
+.feed-grid{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+}
+@media all and (max-width:950px) {
+    .feed-grid{
+        display: grid;
+    grid-template-columns:repeat(3,1fr);
+    }
+}
+@media all and (max-width:720px) {
+    .feed-grid{
+        display: grid;
+    grid-template-columns:repeat(2,1fr);
+    }
+}
+@media all and (max-width:500px) {
+    .feed-grid{
+        display: grid;
+    grid-template-columns:1fr;
+    }
+}

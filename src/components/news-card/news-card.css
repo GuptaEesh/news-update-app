@@ -1,0 +1,14 @@
+.news-card{
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 0 8px var(--secondary-color);
+    min-height: 5rem;
+    min-width:10rem;
+}
+.remove-btn{
+    padding: 0 10px;
+    cursor: pointer;
+}
+.remove-btn:hover{
+    background-color: var(--primary-color);
+    color:var(--text-bright);
+}
